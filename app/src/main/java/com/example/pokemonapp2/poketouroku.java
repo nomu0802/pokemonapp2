@@ -2,8 +2,10 @@ package com.example.pokemonapp2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
@@ -1187,6 +1189,9 @@ public class poketouroku extends AppCompatActivity {
             idg = seikakuda.getSelectedItemPosition();
             i = Integer.valueOf(idg);
             String seikaku = i.toString();
+            //道具
+            Button dougd = findViewById(R.id.dougumei);
+            String dougu = (String) dougd.getText();
 
             ContentValues values = new ContentValues();
             values.put("name", name);
@@ -1211,6 +1216,7 @@ public class poketouroku extends AppCompatActivity {
             values.put("waza4", waza4);
             values.put("memo", memo);
             values.put("seikaku", seikaku);
+            values.put("dougu", dougu);
 
 
             db.insert("pokemondb", null, values);
@@ -1359,6 +1365,10 @@ public class poketouroku extends AppCompatActivity {
         i = Integer.valueOf(idg);
         String seikaku = i.toString();
 
+        //道具
+        Button dougd = findViewById(R.id.dougumei);
+        String dougu = (String) dougd.getText();
+
         ContentValues upvalue = new ContentValues();
         upvalue.put("name",name);
         upvalue.put("name",name);
@@ -1383,6 +1393,7 @@ public class poketouroku extends AppCompatActivity {
         upvalue.put("waza4",waza4);
         upvalue.put("memo",memo);
         upvalue.put("seikaku",seikaku);
+        upvalue.put("dougu",dougu);
 
 
         db.update("pokemondb",upvalue,"_id=?",new String[]{read});
@@ -1403,7 +1414,7 @@ public class poketouroku extends AppCompatActivity {
         Cursor cursor = db.query(
                 "pokemondb",
                 new String[]{"name","ID","tokusei" ,"level","hpkotaiti","atkotaiti","dfkotaiti","spatkotaiti","spdfkotaiti","spdkotaiti","hpdoryokuti","atdoryokuti",
-                "dfdoryokuti","spatdoryokuti","spdfdoryokuti","spddoryokuti","waza1","waza2","waza3","waza4","memo","seikaku"},
+                "dfdoryokuti","spatdoryokuti","spdfdoryokuti","spddoryokuti","waza1","waza2","waza3","waza4","memo","seikaku","dougu"},
                 "_ID = ?",
                 new String[]{read},
                 null,null,null
@@ -1509,7 +1520,10 @@ public class poketouroku extends AppCompatActivity {
         idg = cursor.getString(21);
         tid = Integer.parseInt(idg);
         seikaku.setSelection(tid);
-
+        //道具
+        Button dougd = findViewById(R.id.dougumei);
+        idg = cursor.getString(22);
+        dougd.setText(idg);
 
         cursor.close();
 
@@ -1517,4 +1531,14 @@ public class poketouroku extends AppCompatActivity {
     }
 
 
+    public void dougu(View view) {
+        Context c = poketouroku.this;
+        DialogFragment dialogFragment = new dougu(c);
+        dialogFragment.show(getSupportFragmentManager(), "my_dialog2");
+    }
+
+    public void onReturnValue(String value) {
+        Button dougumei = findViewById(R.id.dougumei);
+        dougumei.setText(value);
+    }
 }

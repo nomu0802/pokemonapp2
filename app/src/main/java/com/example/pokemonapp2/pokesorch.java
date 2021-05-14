@@ -14,11 +14,13 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,13 +31,15 @@ import java.util.List;
 
 public class pokesorch extends AppCompatActivity {
 
+    RecyclerView recyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokesorch);
-        RecyclerView recyclerView = findViewById(R.id.main_recycler_view);
 
 
+        recyclerView = findViewById(R.id.main_recycler_view);
 
         //json読み込み
         json();
@@ -63,7 +67,7 @@ public class pokesorch extends AppCompatActivity {
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 //テキスト変更前
 
-                Toast.makeText(pokesorch.this,"test" , Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
@@ -73,15 +77,15 @@ public class pokesorch extends AppCompatActivity {
                 if(s.length()==0){
 
 
-                    Toast.makeText(pokesorch.this,"test" , Toast.LENGTH_SHORT).show();
+
 
                 }
                 else{sorchname(test);}
 
 
+
                 RecyclerView.Adapter mainAdapter = new MainAdapter(pokesorch.this,createRowData());
                 recyclerView.setAdapter(mainAdapter);
-
 
             }
 
@@ -196,14 +200,14 @@ keys=0;
         for(int i=0;i<pkmname.size();i++){
             String str = pkmname.get(i).toString();
             if(str.contains(test)){
-                Integer id = Integer.valueOf(i+1);
+                Integer id = Integer.valueOf(i);
                 String strid = id.toString();
                 sorchdata.add(strid);
             }
         }
 
     }
-
+    //ソートや詳細検索のダイアログ表示
     public void syousaisorch(View view) {
         DialogFragment dialogFragment = new MyDialogFragment();
         dialogFragment.show(getSupportFragmentManager(), "my_dialog2");

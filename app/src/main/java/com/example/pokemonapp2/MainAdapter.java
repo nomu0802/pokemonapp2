@@ -122,8 +122,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             public void onClick(View view) {
                 //画面遷移
                 String ins[] = {id,rowData.hogeTitle,""};
-
-                Toast.makeText(context, id, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, poketouroku.class);
                 intent.putExtra("KEY",ins);
                 context.startActivity(intent);

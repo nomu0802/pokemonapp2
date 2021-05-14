@@ -10,7 +10,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     //データベース情報を変数に格納
-    private static final String DATABASE_NAME = "pokemonapp8.db";
+    private static final String DATABASE_NAME = "pokemonapp.db";
     private static final String TABLE_NAME = "pokemondb";
     private static final String _ID = "_id";
     private static final String COLUMN_NAME_NAME = "name";
@@ -35,6 +35,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NAME_waza4 = "waza4";
     private static final String COLUMN_NAME_memo = "memo";
     private static final String COLUMN_NAME_seikaku = "seikaku";
+    private static final String COLUMN_NAME_dougu = "dougu";
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + TABLE_NAME + " (" +
             _ID + " INTEGER PRIMARY KEY," +
@@ -59,7 +60,8 @@ public class MyOpenHelper extends SQLiteOpenHelper {
             COLUMN_NAME_waza3 + " TEXT," +
             COLUMN_NAME_waza4 + " TEXT," +
             COLUMN_NAME_memo + " TEXT," +
-            COLUMN_NAME_seikaku + " TEXT)";
+            COLUMN_NAME_seikaku + " TEXT," +
+            COLUMN_NAME_dougu + " TEXT)";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS" + TABLE_NAME;

@@ -24,13 +24,8 @@ public class MyDialogFragment extends DialogFragment {
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View customAlertView = inflater.inflate(R.layout.custom_layout, null);
 
-        // タイトルの変更
-        TextView title = customAlertView.findViewById(R.id.title);
-        title.setText("こんにちは！");
 
-        // メッセージの変更
-        TextView message = customAlertView.findViewById(R.id.message);
-        message.setText("ここにメッセージを入力します。ここにメッセージを入力します。ここにメッセージを入力します。");
+
 
 
         // ダイアログの作成

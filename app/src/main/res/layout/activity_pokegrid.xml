@@ -10,7 +10,7 @@
         android:id="@+id/gridview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/backto"
+        android:background="@drawable/boxback"
         android:numColumns="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,14 +22,4 @@
 
     </GridView>
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="560dp"
-        android:text="登録"
-        app:layout_constraintBottom_toBottomOf="@+id/gridview"
-        app:layout_constraintEnd_toEndOf="@+id/gridview"
-        app:layout_constraintStart_toStartOf="@+id/gridview"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

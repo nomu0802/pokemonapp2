@@ -133,12 +133,7 @@ public class pokegrid extends AppCompatActivity {
         }
         ccc.close();
 
-        for (int i=2000; i<3000;i++) {
-            Integer p = Integer.valueOf(i);
-            String str = p.toString();
-            list1.add(str);
-            list2.add(str);
-        }
+
 
 
         //toArrayメソッドを用いて、List型をString型の配列に変換

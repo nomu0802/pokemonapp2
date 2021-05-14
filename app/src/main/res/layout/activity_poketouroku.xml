@@ -712,39 +712,21 @@
         app:layout_constraintTop_toTopOf="@+id/leveltext"
         app:layout_constraintVertical_bias="0.072" />
 
-    <Spinner
-        android:id="@+id/dougmei"
-        android:layout_width="180dp"
-        android:layout_height="29dp"
-        app:layout_constraintBottom_toBottomOf="@+id/douguwaku2"
-        app:layout_constraintStart_toStartOf="@+id/douguwaku2"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku2" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="110dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#C72E2E"
         android:onClick="saveData"
         android:text="登録"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/waku" />
-
-    <Button
-        android:id="@+id/pokesearch"
-        android:layout_width="0dp"
-        android:onClick="serch"
-        android:layout_height="0dp"
-        android:layout_marginStart="110dp"
-        android:text="変更"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/namewaku"
-        app:layout_constraintEnd_toEndOf="@+id/namewaku"
-        app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintStart_toStartOf="@+id/namewaku"
-        app:layout_constraintTop_toTopOf="@+id/namewaku" />
 
 
     <TextView
@@ -1657,6 +1639,37 @@
         app:layout_constraintBottom_toBottomOf="@+id/no"
         app:layout_constraintStart_toEndOf="@+id/no"
         app:layout_constraintTop_toTopOf="@+id/no" />
+
+    <Button
+        android:id="@+id/dougumei"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="#00000000"
+        android:onClick="dougu"
+        android:text=""
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/douguwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/douguwaku2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/douguwaku2"
+        app:layout_constraintTop_toTopOf="@+id/douguwaku2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="10dp"
+        android:layout_height="8dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tourokusankaku"
+        app:layout_constraintBottom_toBottomOf="@+id/douguwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/douguwaku2"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/dougumei"
+        app:layout_constraintTop_toTopOf="@+id/douguwaku2"
+        app:layout_constraintVertical_bias="0.058" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
