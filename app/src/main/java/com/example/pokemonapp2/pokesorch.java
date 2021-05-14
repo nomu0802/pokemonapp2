@@ -205,23 +205,8 @@ keys=0;
     }
 
     public void syousaisorch(View view) {
-        DialogFragment dialogFragment = new sorchdialog();
-        dialogFragment.show(getSupportFragmentManager(), "my_dialog");
-
-
-
-/*
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("ダイアログのタイトル");
-        builder.setMessage("ダイアログのメッセージ");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // OK button pressed
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();*/
+        DialogFragment dialogFragment = new MyDialogFragment();
+        dialogFragment.show(getSupportFragmentManager(), "my_dialog2");
     }
 
 
