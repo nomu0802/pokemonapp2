@@ -25,7 +25,8 @@
 ①ニックネームをつけることができます
 ②レベルをプルダウン方式で選択できます
 ⑤道具をダイアログ方式で設定できます  
-![Screenshot_20210702_140025_com example pokemonapp2](https://user-images.githubusercontent.com/83626132/124227039-fafbd800-db44-11eb-8857-72f89db8b7fb.jpg)  
+![image](https://user-images.githubusercontent.com/83626132/124227154-2aaae000-db45-11eb-8614-b12b4b718c0e.png)  
+
 
 
 
