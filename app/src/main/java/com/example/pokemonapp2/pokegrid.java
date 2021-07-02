@@ -2,6 +2,7 @@ package com.example.pokemonapp2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.database.Cursor;
@@ -44,11 +45,10 @@ public class pokegrid extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokegrid);
 
-
-
-
-
-
+        //データの受け取り
+        Intent intent = getIntent();
+        String idex[] = intent.getStringArrayExtra("KEY");
+        String ids = idex[0];
         //adapterの準備
         //表示するカラム名
 
@@ -68,16 +68,38 @@ public class pokegrid extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int positon, long id) {
-                String h = list3.get(positon);
-                String name = namelist.get(positon);
-                String idg = list1.get(positon);
-                String ins[] = {idg,name,h};
-                Toast.makeText(getApplicationContext(),"you cliked"+h,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(pokegrid.this, poketouroku.class);
-                intent.putExtra("KEY",ins);
-                startActivity(intent);
+
+                //ポケsearchからの場合登録画面に画面遷移
+                if(ids.equals("0")) {
+                    String h = list3.get(positon);
+                    String name = namelist.get(positon);
+                    String idg = list1.get(positon);
+                    String ins[] = {idg, name, h};
+
+                    Intent intent = new Intent(pokegrid.this, poketouroku.class);
+                    intent.putExtra("KEY", ins);
+                    startActivity(intent);
+                }
+                else{
+                    String read = idex[3];;
+                    ptOpenHelper helper2;
+                    String pokeid = String.valueOf(positon+1);
+                    helper2 = new ptOpenHelper(getApplicationContext());
+                    SQLiteDatabase db = helper2.getWritableDatabase();
+                    ContentValues upvalue = new ContentValues();
+                    if(idex[2].equals("1")){upvalue.put("ID", pokeid);}
+                    else{
+                        upvalue.put("ID"+idex[2], pokeid);
+
+                    }
+
+                    db.update("pokemonptdb", upvalue, "_id=?", new String[]{read});
+                    finish();
+
+                }
 
             }
+
 
 
         });

@@ -36,6 +36,8 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NAME_memo = "memo";
     private static final String COLUMN_NAME_seikaku = "seikaku";
     private static final String COLUMN_NAME_dougu = "dougu";
+    private static final String COLUMN_NAME_nickname = "nickname";
+
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + TABLE_NAME + " (" +
             _ID + " INTEGER PRIMARY KEY," +
@@ -61,7 +63,8 @@ public class MyOpenHelper extends SQLiteOpenHelper {
             COLUMN_NAME_waza4 + " TEXT," +
             COLUMN_NAME_memo + " TEXT," +
             COLUMN_NAME_seikaku + " TEXT," +
-            COLUMN_NAME_dougu + " TEXT)";
+            COLUMN_NAME_dougu + " TEXT," +
+            COLUMN_NAME_nickname + " TEXT)";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS" + TABLE_NAME;

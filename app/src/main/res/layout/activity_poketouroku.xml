@@ -4,269 +4,198 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/poketourokuback">
+    android:background="@drawable/poketourokuback"
+    tools:context=".poketouroku">
 
-    <TextView
-        android:id="@+id/waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/wakud"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/douguwaku1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/waku1"
-        android:layout_width="103dp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
         android:layout_height="44dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="39dp"
-
-        android:background="@drawable/sankaku"
-
-        android:paddingBottom="10dp"
+        android:background="@drawable/touroku1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/namewaku"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="199dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="@+id/waku1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/waku1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/seikakuwaku1"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seikaku2"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levelwaku"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/seikaku2"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/seikakuwaku1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/seikakuwaku1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/thum"
-        android:layout_width="118dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="42dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pokeimg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        app:layout_constraintBottom_toBottomOf="@+id/thum"
-        app:layout_constraintEnd_toEndOf="@+id/thum"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/thum"
-        app:layout_constraintTop_toTopOf="@+id/thum"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/seikakutytle"
+        android:id="@+id/pokeimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="性格:"
-        android:textColor="#FFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/seikakuwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/seikakuwaku1"
-        app:layout_constraintStart_toStartOf="@+id/seikakuwaku1"
-        app:layout_constraintTop_toTopOf="@+id/seikakuwaku1" />
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/tourokuicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/levelwaku"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/tourokusikakumini" />
+
+    <Spinner
+        android:id="@+id/levelsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf="@+id/leveltext"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <TextView
-        android:id="@+id/name"
-        android:layout_width="94dp"
-        android:layout_height="0dp"
+        android:id="@+id/leveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Lv."
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/levelsp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/levelwaku"
+        app:layout_constraintStart_toStartOf="@+id/levelwaku"
+        app:layout_constraintTop_toTopOf="@+id/levelwaku" />
 
-        android:textColor="#FFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/namewaku"
-        app:layout_constraintStart_toEndOf="@+id/sprites"
-        app:layout_constraintTop_toBottomOf="@+id/no"
-        app:layout_constraintVertical_bias="0.266" />
     <ImageView
         android:id="@+id/sprites"
         android:layout_width="58dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
-        app:layout_constraintBottom_toBottomOf="@+id/namewaku"
-        app:layout_constraintEnd_toEndOf="@+id/waku1" />
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No."
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/sprites"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        android:text="15"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/no"
+        app:layout_constraintStart_toEndOf="@+id/no"
+        app:layout_constraintTop_toTopOf="@+id/no"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:text="キモリ"
+
+        android:textColor="#FFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/no1"
+        app:layout_constraintTop_toTopOf="@+id/no1" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="ニックネーム"
+        android:inputType="textPersonName"
+
+        android:textColor="#FFFF"
+        android:textColorHint="#94FDFDFD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/sprites"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/seikaku"
+        android:textColor="#FFFF"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelwaku" />
+
+    <TextView
+        android:id="@+id/seikakuwaku1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="性格:"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/seikaku"
+        app:layout_constraintTop_toTopOf="@+id/seikaku" />
+
+    <Spinner
+        android:id="@+id/tokusei"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="@+id/seikaku"
+        app:layout_constraintStart_toStartOf="@+id/seikaku"
+        app:layout_constraintTop_toBottomOf="@+id/seikaku" />
 
     <TextView
         android:id="@+id/tokuseiwaku1"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seikaku2"
-        app:layout_constraintHorizontal_bias="0.026"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seikakuwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tokuseiwaku2"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/tokuseiwaku1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tokuseiwaku1"
-        app:layout_constraintTop_toTopOf="@+id/tokuseiwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tokuseitext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
         android:text="特性:"
         android:textColor="#FFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tokuseiwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/tokuseiwaku1"
-        app:layout_constraintStart_toStartOf="@+id/tokuseiwaku1"
-        app:layout_constraintTop_toTopOf="@+id/tokuseiwaku1" />
-
+        app:layout_constraintEnd_toStartOf="@+id/tokusei"
+        app:layout_constraintTop_toTopOf="@+id/tokusei" />
 
     <TextView
-        android:id="@+id/douguwaku1"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seikaku2"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tokuseiwaku1"
-        app:layout_constraintVertical_bias="0.0" />
+        android:id="@+id/dougumei"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:onClick="item"
+        android:gravity="left|center"
+        android:textColor="#FFFF"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="@+id/tokusei"
+        app:layout_constraintTop_toBottomOf="@+id/tokusei"
+        tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/douguwaku2"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/douguwaku1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/dougutext"
+        android:id="@+id/douguwaku"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
         android:text="道具:"
         android:textColor="#FFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/douguwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/douguwaku1"
-        app:layout_constraintStart_toStartOf="@+id/douguwaku1"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku1" />
-
-
-    <TextView
-        android:id="@+id/formwaku1"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="392dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seikaku2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/formwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/formwaku1"
-        app:layout_constraintEnd_toStartOf="@+id/douguwaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/formwaku1"
-        app:layout_constraintTop_toTopOf="@+id/formwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/formtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="フォルム:"
-        android:textColor="#FFFF"
-        android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@+id/formwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/formwaku1"
-        app:layout_constraintStart_toStartOf="@+id/formwaku1"
-        app:layout_constraintTop_toTopOf="@+id/formwaku1" />
-
+        app:layout_constraintEnd_toStartOf="@+id/dougumei"
+        app:layout_constraintTop_toTopOf="@+id/dougumei" />
 
     <TextView
         android:id="@+id/typevi"
         android:layout_width="59dp"
         android:layout_height="18dp"
-
-        android:layout_marginStart="20dp"
 
         android:layout_marginTop="8dp"
         android:background="@drawable/type1"
@@ -274,8 +203,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.012"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thum"
+        app:layout_constraintStart_toStartOf="@+id/pokeimg"
+        app:layout_constraintTop_toBottomOf="@+id/pokeimg"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -317,1359 +246,65 @@
         app:layout_constraintStart_toStartOf="@+id/typevi2"
         app:layout_constraintTop_toTopOf="@+id/typevi2" />
 
+    <Spinner
+        android:id="@+id/forumspin"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tourokusikakumini"
+        app:layout_constraintEnd_toStartOf="@+id/douguwaku"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/douguwaku" />
+
     <TextView
-        android:id="@+id/stutsuwaku"
+        android:id="@+id/textView14"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="フォルム:"
+        android:textColor="#FFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/forumspin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/forumspin" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#00000000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/tourokuback5"
+        app:layout_constraintBottom_toTopOf="@+id/tourokubutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumspin">
 
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/waku"
-        app:layout_constraintTop_toTopOf="@+id/waku"
-        app:layout_constraintVertical_bias="1.0" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/tourokutabback" />
+
+    </androidx.viewpager.widget.ViewPager>
+
 
     <Button
         android:id="@+id/tourokubutton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="120dp"
-        android:text="登録"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="@+id/waku"
-        app:layout_constraintTop_toBottomOf="@+id/stutsuwaku" />
-
-
-    <TextView
-        android:id="@+id/sentakuwaku"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="287dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/waku"
-        app:layout_constraintTop_toTopOf="@+id/waku"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/statusbuton"
-        android:layout_width="114dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/waku2"
-        app:layout_constraintBottom_toBottomOf="@+id/sentakuwaku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/sentakuwaku"
-        app:layout_constraintTop_toTopOf="@+id/sentakuwaku"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/stimg"
-        android:layout_width="34dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="80dp"
-        android:background="@drawable/monst"
-        app:layout_constraintBottom_toBottomOf="@+id/statusbuton"
-        app:layout_constraintEnd_toEndOf="@+id/statusbuton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statusbuton"
-        app:layout_constraintTop_toTopOf="@+id/statusbuton"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-    <TextView
-        android:id="@+id/sttext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ステータス"
-        app:layout_constraintBottom_toBottomOf="@+id/statusbuton"
-        app:layout_constraintEnd_toEndOf="@+id/statusbuton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/stimg"
-        app:layout_constraintTop_toTopOf="@+id/statusbuton" />
-
-    <Button
-        android:id="@+id/wazabuton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/waku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statusbuton"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintEnd_toStartOf="@+id/memobuton"
-        app:layout_constraintHorizontal_bias="0.015"
-        app:layout_constraintStart_toEndOf="@+id/statusbuton"
-        app:layout_constraintTop_toTopOf="@+id/statusbuton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/wazaimg"
-        android:layout_width="32dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="80dp"
-        android:background="@drawable/wazaimg"
-        app:layout_constraintBottom_toBottomOf="@+id/wazabuton"
-        app:layout_constraintEnd_toEndOf="@+id/wazabuton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/wazabuton"
-        app:layout_constraintTop_toTopOf="@+id/wazabuton"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/wazatext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="技選択"
-        app:layout_constraintBottom_toBottomOf="@+id/wazabuton"
-        app:layout_constraintEnd_toEndOf="@+id/wazabuton"
-        app:layout_constraintStart_toEndOf="@+id/wazaimg"
-        app:layout_constraintTop_toTopOf="@+id/wazabuton" />
-
-
-    <Button
-        android:id="@+id/memobuton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/waku2"
-        app:layout_constraintBottom_toBottomOf="@+id/wazabuton"
-        app:layout_constraintEnd_toEndOf="@+id/sentakuwaku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/wazabuton"
-        app:layout_constraintStart_toStartOf="@+id/sentakuwaku"
-        app:layout_constraintTop_toTopOf="@+id/wazabuton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/memoimg"
-        android:layout_width="35dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="110dp"
-        android:background="@drawable/memoimg"
-        app:layout_constraintBottom_toBottomOf="@+id/memobuton"
-        app:layout_constraintEnd_toEndOf="@+id/memobuton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/memobuton"
-        app:layout_constraintTop_toTopOf="@+id/memobuton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/memotext"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="メモ"
-        app:layout_constraintBottom_toBottomOf="@+id/memobuton"
-        app:layout_constraintEnd_toEndOf="@+id/memobuton"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/memoimg"
-        app:layout_constraintStart_toStartOf="@+id/memobuton"
-        app:layout_constraintTop_toTopOf="@+id/wazabuton"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <TextView
-        android:id="@+id/wazawaku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/selectwaku"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/sentakuwaku"
-        app:layout_constraintTop_toBottomOf="@+id/sentakuwaku" />
-
-    <Spinner
-        android:id="@+id/waza1"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza1text" />
-
-    <TextView
-        android:id="@+id/waza1text"
-        android:layout_width="36dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="技１"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wazawaku"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toTopOf="@+id/wazawaku"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/waza2"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza2text" />
-
-    <TextView
-        android:id="@+id/waza2text"
-        android:layout_width="36dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="技2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wazawaku"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza1"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <Spinner
-        android:id="@+id/waza3"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza3text" />
-
-    <TextView
-        android:id="@+id/waza3text"
-        android:layout_width="36dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="技3"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wazawaku"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/waza4"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza4text" />
-
-    <TextView
-        android:id="@+id/waza4text"
-        android:layout_width="36dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="技4"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/wazawaku"
-        app:layout_constraintEnd_toEndOf="@+id/wazawaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/wazawaku"
-        app:layout_constraintTop_toBottomOf="@+id/waza3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/memowaku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/selectwaku"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/sentakuwaku"
-        app:layout_constraintTop_toBottomOf="@+id/sentakuwaku" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="77dp"
-        android:layout_height="81dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/backmons" />
-
-    <EditText
-        android:id="@+id/memoedit"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#00000000"
-        android:text="メモ"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/memowaku"
-        app:layout_constraintEnd_toEndOf="@+id/memowaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/memowaku"
-        app:layout_constraintTop_toTopOf="@+id/memowaku"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/seikaku"
-        android:layout_width="180dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/seikaku2"
-        app:layout_constraintStart_toEndOf="@+id/seikakuwaku1"
-        app:layout_constraintTop_toTopOf="@+id/seikaku2" />
-
-
-    <TextView
-        android:id="@+id/no"
-        android:layout_width="23dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="8dp"
-        android:text="No."
-        android:textColor="#FFFF"
-        app:layout_constraintStart_toEndOf="@+id/sprites"
-        app:layout_constraintTop_toTopOf="@+id/namewaku" />
-
-    <Spinner
-        android:id="@+id/tokusei"
-        android:layout_width="180dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tokuseiwaku2"
-        app:layout_constraintStart_toStartOf="@+id/tokuseiwaku2"
-        app:layout_constraintTop_toTopOf="@+id/tokuseiwaku2" />
-
-    <Spinner
-        android:id="@+id/forumspin"
-        android:layout_width="136dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/formwaku2"
-        app:layout_constraintStart_toStartOf="@+id/formwaku2"
-        app:layout_constraintTop_toTopOf="@+id/formwaku2" />
-
-    <TextView
-        android:id="@+id/levelwaku"
-        android:layout_width="147dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="120dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintEnd_toEndOf="@+id/namewaku"
-        app:layout_constraintStart_toStartOf="@+id/namewaku"
-        app:layout_constraintTop_toBottomOf="@+id/namewaku" />
-
-
-    <TextView
-        android:id="@+id/leveltext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Lv."
-        android:textColor="#FFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/levelwaku"
-        app:layout_constraintStart_toEndOf="@+id/no"
-        app:layout_constraintStart_toStartOf="@+id/levelwaku"
-        app:layout_constraintTop_toTopOf="@+id/levelwaku" />
-
-    <Spinner
-        android:id="@+id/levelsp"
-        android:layout_width="104dp"
-        android:layout_height="22dp"
-
-        app:layout_constraintBottom_toBottomOf="@+id/leveltext"
-        app:layout_constraintStart_toEndOf="@+id/leveltext"
-        app:layout_constraintTop_toTopOf="@+id/leveltext"
-        app:layout_constraintVertical_bias="0.072" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="110dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#C72E2E"
+        android:background="#AE0B0B"
         android:onClick="saveData"
         android:text="登録"
-        android:textColor="#FFFFFF"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/waku" />
-
-
-    <TextView
-        android:id="@+id/stwaku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/selectwaku"
-        app:layout_constraintBottom_toBottomOf="@+id/waku"
-        app:layout_constraintEnd_toEndOf="@+id/waku"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/waku"
-        app:layout_constraintTop_toBottomOf="@+id/sentakuwaku"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-    <TextView
-        android:id="@+id/statutswaku1"
-        android:layout_width="97dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:layout_marginBottom="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="@+id/stutsuwaku"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="@+id/stutsuwaku"
-        app:layout_constraintTop_toTopOf="@+id/stwaku"
-        app:layout_constraintVertical_bias="0.071" />
-
-
-    <TextView
-        android:id="@+id/statutswaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutswaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutswaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutswaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statustext1"
-        android:layout_width="46dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="4dp"
-        android:text="種族値"
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/statutswaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutswaku2"
-        app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
-
-    <TextView
-        android:id="@+id/statustext2"
-        android:layout_width="45dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="個体値"
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/statutswaku2"
-        app:layout_constraintStart_toEndOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
-
-    <TextView
-        android:id="@+id/statustext3"
-        android:layout_width="45dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="努力値"
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/statutswaku2"
-        app:layout_constraintStart_toEndOf="@+id/statustext2"
-        app:layout_constraintTop_toTopOf="@+id/statutswaku2"
-        app:layout_constraintVertical_bias="0.166" />
-
-    <TextView
-        android:id="@+id/statustext4"
-        android:layout_width="45dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="実数値"
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/statutswaku2"
-        app:layout_constraintStart_toEndOf="@+id/statustext3"
-        app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
-
-
-    <TextView
-        android:id="@+id/statutshpwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:layout_marginBottom="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintBottom_toBottomOf="@+id/stutsuwaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutswaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <TextView
-        android:id="@+id/statutshpwaku1text"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:text="HP:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutshpwaku1"
-        app:layout_constraintHorizontal_bias="0.818"
-        app:layout_constraintStart_toStartOf="@+id/statutshpwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku1"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/statutshpwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutshpwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/hp1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku2" />
-
-
-    <TextView
-        android:id="@+id/hp1"
-        android:layout_width="46dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/hp1waku"
-        app:layout_constraintTop_toTopOf="@+id/hp1waku" />
-
-
-    <TextView
-        android:id="@+id/hp2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku2"
-        app:layout_constraintStart_toEndOf="@+id/hp1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku2" />
-
-    <Spinner
-        android:id="@+id/hp2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/hp2waku"
-        app:layout_constraintStart_toStartOf="@+id/hp2waku"
-        app:layout_constraintTop_toTopOf="@+id/hp2waku" />
-
-    <TextView
-        android:id="@+id/hp3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku2"
-        app:layout_constraintStart_toEndOf="@+id/hp2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku2" />
-
-    <Spinner
-        android:id="@+id/hp3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/hp3waku"
-        app:layout_constraintStart_toStartOf="@+id/hp3waku"
-        app:layout_constraintTop_toTopOf="@+id/hp3waku" />
-
-    <TextView
-        android:id="@+id/hp4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutshpwaku2"
-        app:layout_constraintStart_toEndOf="@+id/hp3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutshpwaku2" />
-
-    <TextView
-        android:id="@+id/hp4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@+id/hp4waku"
-        app:layout_constraintTop_toTopOf="@+id/hp4waku" />
-
-
-    <TextView
-        android:id="@+id/statutsatwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutshpwaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutshpwaku1" />
-
-
-    <TextView
-        android:id="@+id/statutsatwaku1text"
-        android:layout_width="67dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="こうげき:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutsatwaku1"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="@+id/statutsatwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statutsatwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutsatwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/at1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku2" />
-
-    <TextView
-        android:id="@+id/at1"
-        android:layout_width="46dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/at1waku"
-        app:layout_constraintTop_toTopOf="@+id/at1waku" />
-
-
-    <TextView
-        android:id="@+id/at2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/at1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku2" />
-
-    <Spinner
-        android:id="@+id/at2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/at2waku"
-        app:layout_constraintStart_toStartOf="@+id/at2waku"
-        app:layout_constraintTop_toTopOf="@+id/at2waku" />
-
-    <TextView
-        android:id="@+id/at3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/at2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku2" />
-
-    <Spinner
-        android:id="@+id/at3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/at3waku"
-        app:layout_constraintStart_toStartOf="@+id/at3waku"
-        app:layout_constraintTop_toTopOf="@+id/at3waku" />
-
-    <TextView
-        android:id="@+id/at4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/at3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsatwaku2" />
-
-    <TextView
-        android:id="@+id/at4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@+id/at4waku"
-        app:layout_constraintTop_toTopOf="@+id/at4waku" />
-
-    <TextView
-        android:id="@+id/statutsdfwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutsatwaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutsatwaku1" />
-
-
-    <TextView
-        android:id="@+id/statutsdfwaku1text"
-        android:layout_width="67dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="ぼうぎょ:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutsdfwaku1"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="@+id/statutsdfwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statutsdfwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutsdfwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/df1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku2" />
-
-    <TextView
-        android:id="@+id/df1"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/df1waku"
-        app:layout_constraintTop_toTopOf="@+id/df1waku" />
-
-
-    <TextView
-        android:id="@+id/df2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/df1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku2" />
-
-    <Spinner
-        android:id="@+id/df2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/df2waku"
-        app:layout_constraintStart_toStartOf="@+id/df2waku"
-        app:layout_constraintTop_toTopOf="@+id/df2waku" />
-
-    <TextView
-        android:id="@+id/df3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/df2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku2" />
-
-    <Spinner
-        android:id="@+id/df3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/df3waku"
-        app:layout_constraintStart_toStartOf="@+id/df3waku"
-        app:layout_constraintTop_toTopOf="@+id/df3waku" />
-
-    <TextView
-        android:id="@+id/df4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/df3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsdfwaku2" />
-
-    <TextView
-        android:id="@+id/df4"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@+id/df4waku"
-        app:layout_constraintTop_toTopOf="@+id/df4waku" />
-
-    <TextView
-        android:id="@+id/statutsspatwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutsdfwaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutsdfwaku1" />
-
-
-    <TextView
-        android:id="@+id/statutsspatwaku1text"
-        android:layout_width="67dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="とくこう:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutsspatwaku1"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="@+id/statutsspatwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statutsspatwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutsspatwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/spat1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku2" />
-
-    <TextView
-        android:id="@+id/spat1"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/spat1waku"
-        app:layout_constraintTop_toTopOf="@+id/spat1waku" />
-
-
-    <TextView
-        android:id="@+id/spat2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spat1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku2" />
-
-    <Spinner
-        android:id="@+id/spat2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spat2waku"
-        app:layout_constraintStart_toStartOf="@+id/spat2waku"
-        app:layout_constraintTop_toTopOf="@+id/spat2waku" />
-
-    <TextView
-        android:id="@+id/spat3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spat2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku2" />
-
-    <Spinner
-        android:id="@+id/spat3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spat3waku"
-        app:layout_constraintStart_toStartOf="@+id/spat3waku"
-        app:layout_constraintTop_toTopOf="@+id/spat3waku" />
-
-    <TextView
-        android:id="@+id/spat4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspatwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spat3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspatwaku2" />
-
-    <TextView
-        android:id="@+id/spat4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@+id/spat4waku"
-        app:layout_constraintTop_toTopOf="@+id/spat4waku" />
-
-
-    <TextView
-        android:id="@+id/statutsspdfwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutsspatwaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutsspatwaku1" />
-
-    <TextView
-        android:id="@+id/statutsspdfwaku1text"
-        android:layout_width="67dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="とくぼう:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutsspdfwaku1"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="@+id/statutsspdfwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statutsspdfwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutsspdfwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/spdf1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku2" />
-
-    <TextView
-        android:id="@+id/spdf1"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/spdf1waku"
-        app:layout_constraintTop_toTopOf="@+id/spdf1waku" />
-
-
-    <TextView
-        android:id="@+id/spdf2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdf1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku2" />
-
-    <Spinner
-        android:id="@+id/spdf2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spdf2waku"
-        app:layout_constraintStart_toStartOf="@+id/spdf2waku"
-        app:layout_constraintTop_toTopOf="@+id/spdf2waku" />
-
-    <TextView
-        android:id="@+id/spdf3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdf2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku2" />
-
-    <Spinner
-        android:id="@+id/spdf3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spdf3waku"
-        app:layout_constraintStart_toStartOf="@+id/spdf3waku"
-        app:layout_constraintTop_toTopOf="@+id/spdf3waku" />
-
-    <TextView
-        android:id="@+id/spdf4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspdfwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdf3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspdfwaku2" />
-
-    <TextView
-        android:id="@+id/spdf4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/spdf4waku"
-        app:layout_constraintStart_toStartOf="@+id/spdf4waku"
-        app:layout_constraintTop_toTopOf="@+id/spdf4waku" />
-
-    <TextView
-        android:id="@+id/statutsspddwaku1"
-        android:layout_width="97dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/sikaku"
-        app:layout_constraintEnd_toEndOf="@+id/statutswaku1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/statutsspdfwaku1"
-        app:layout_constraintTop_toBottomOf="@+id/statutsspdfwaku1" />
-
-
-    <TextView
-        android:id="@+id/statutsspddwaku1text"
-        android:layout_width="67dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="すばやさ:"
-        android:textColor="#FFFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/statutsspddwaku1"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="@+id/statutsspddwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/statutsspddwaku2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sikaku2"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku1"
-        app:layout_constraintEnd_toEndOf="@+id/stutsuwaku"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/statutsspddwaku1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/spdd1waku"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/statustext1"
-        app:layout_constraintStart_toStartOf="@+id/statustext1"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku2" />
-
-    <TextView
-        android:id="@+id/spdd1"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="14dp"
-        android:textColor="#000"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/spdd1waku"
-        app:layout_constraintTop_toTopOf="@+id/spdd1waku" />
-
-
-    <TextView
-        android:id="@+id/spdd2waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdd1waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku2" />
-
-    <Spinner
-        android:id="@+id/spdd2"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spdd2waku"
-        app:layout_constraintStart_toStartOf="@+id/spdd2waku"
-        app:layout_constraintTop_toTopOf="@+id/spdd2waku" />
-
-    <TextView
-        android:id="@+id/spdd3waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdd2waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku2" />
-
-    <Spinner
-        android:id="@+id/spdd3"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spdd3waku"
-        app:layout_constraintStart_toStartOf="@+id/spdd3waku"
-        app:layout_constraintTop_toTopOf="@+id/spdd3waku" />
-
-    <TextView
-        android:id="@+id/spdd4waku"
-        android:layout_width="45dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/waku1"
-        app:layout_constraintBottom_toBottomOf="@+id/statutsspddwaku2"
-        app:layout_constraintStart_toEndOf="@+id/spdd3waku"
-        app:layout_constraintTop_toTopOf="@+id/statutsspddwaku2" />
-
-    <TextView
-        android:id="@+id/spdd4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="#000"
-        app:layout_constraintBottom_toBottomOf="@+id/spdd4waku"
-        app:layout_constraintStart_toStartOf="@+id/spdd4waku"
-        app:layout_constraintTop_toTopOf="@+id/spdd4waku" />
-
-    <TextView
-        android:id="@+id/no1"
-        android:layout_width="45dp"
-        android:layout_height="18dp"
-        android:text="15"
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/no"
-        app:layout_constraintStart_toEndOf="@+id/no"
-        app:layout_constraintTop_toTopOf="@+id/no" />
-
-    <Button
-        android:id="@+id/dougumei"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:background="#00000000"
-        android:onClick="dougu"
-        android:text=""
-        android:textColor="#FFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/douguwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/douguwaku2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/douguwaku2"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="10dp"
-        android:layout_height="8dp"
-
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/tourokusankaku"
-        app:layout_constraintBottom_toBottomOf="@+id/douguwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/douguwaku2"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toEndOf="@+id/dougumei"
-        app:layout_constraintTop_toTopOf="@+id/douguwaku2"
-        app:layout_constraintVertical_bias="0.058" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

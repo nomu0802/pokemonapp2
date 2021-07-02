@@ -78,6 +78,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
      * ViewHolderとRecyclerViewをバインドする
      * 一行のViewに対して共通でやりたい処理をここで書く。今回はテキストのセットしかしてないけど。
      */
+
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
         pokesorch.RowData rowData = this.rowDataList.get(position);
@@ -100,14 +101,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         type2d.setColorFilter(Color.parseColor(color),PorterDuff.Mode.SRC_IN);
         holder.typewaku2.setBackground(type2d);
 
-
-
-
-
-
         int i = rowData.postion;
 
-            //画像の設定
+        //画像の設定
         Integer ii = Integer.valueOf(i);
         String id = ii.toString();
 
@@ -120,6 +116,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         holder.lay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //画面遷移
                 String ins[] = {id,rowData.hogeTitle,""};
                 Intent intent = new Intent(context, poketouroku.class);
@@ -130,9 +127,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         });
     }
 
+
     /**
      * リストの行数
      */
+
+
+
+
     @Override
     public int getItemCount() {
         return rowDataList.size();

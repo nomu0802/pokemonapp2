@@ -51,6 +51,7 @@ public class pokesorch extends AppCompatActivity {
         // RecyclerViewにlayoutManagerをセットする。
         // このlayoutManagerの種類によって「1列のリスト」なのか「２列のリスト」とかが選べる。
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+
         recyclerView.setLayoutManager(layoutManager);
 
         // Adapter生成してRecyclerViewにセット
@@ -76,13 +77,9 @@ public class pokesorch extends AppCompatActivity {
                 String test = editText.getText().toString();
                 if(s.length()==0){
 
-
-
-
                 }
+
                 else{sorchname(test);}
-
-
 
                 RecyclerView.Adapter mainAdapter = new MainAdapter(pokesorch.this,createRowData());
                 recyclerView.setAdapter(mainAdapter);
@@ -130,7 +127,7 @@ public class pokesorch extends AppCompatActivity {
                 data.poketype2 = pkm.type2;
                 dataSet.add(data);
             }
-keys=0;
+            keys=0;
 
         }
 
@@ -171,6 +168,7 @@ keys=0;
                 pkm.type2="";
                 for(int u=0;u<typeli.length();u++) {
                     if(u==1){
+
                         pkm.type2 = typeli.getString(1);
 
                     }

@@ -34,8 +34,8 @@
 
     <EditText
         android:id="@+id/sorchnameedit"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="358dp"
+        android:layout_height="54dp"
         android:backgroundTint="@color/black"
         android:ems="10"
         android:inputType="textPersonName"
@@ -46,24 +46,6 @@
         app:layout_constraintStart_toStartOf="@+id/sorchwaku"
         app:layout_constraintTop_toTopOf="@+id/sorchwaku"
         app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/sorchbutton"
-        android:layout_width="99dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/sorchbutton"
-        android:onClick="syousaisorch"
-        android:text="詳細検索"
-        android:textColor="#FFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sorchwaku"
-        app:layout_constraintEnd_toEndOf="@+id/sorchwaku"
-        app:layout_constraintStart_toEndOf="@+id/sorchnameedit"
-        app:layout_constraintTop_toTopOf="@+id/sorchwaku" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
