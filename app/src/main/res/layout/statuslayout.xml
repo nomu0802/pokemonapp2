@@ -268,16 +268,6 @@
         app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="実数値"
-        android:textColor="#FFFF"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
-
-    <TextView
         android:id="@+id/hpspinner0"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -321,18 +311,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/hpwaku2" />
 
-    <TextView
-        android:id="@+id/hpspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/hpwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/hpwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/hpwaku2" />
 
 
     <TextView
@@ -379,18 +357,6 @@
         app:layout_constraintTop_toTopOf="@+id/atwaku2" />
 
 
-    <TextView
-        android:id="@+id/atspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/atwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/atwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/atwaku2" />
 
 
 
@@ -436,18 +402,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/dfwaku2" />
 
-    <TextView
-        android:id="@+id/dfspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/dfwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/dfwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/dfwaku2" />
 
 
     <TextView
@@ -492,19 +446,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/spatwaku2" />
 
-    <TextView
-        android:id="@+id/spatspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/spatwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/spatwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/spatwaku2" />
-
 
     <TextView
         android:id="@+id/spdfspinner0"
@@ -546,18 +487,6 @@
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
         app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/spdfwaku2" />
-    <TextView
-        android:id="@+id/spdfspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/spdfwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/spdfwaku2" />
 
     <TextView
@@ -602,18 +531,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/spdwaku2" />
 
-    <TextView
-        android:id="@+id/spdspinner3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/spinerback"
-        app:layout_constraintBottom_toBottomOf="@+id/spdwaku2"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toEndOf="@+id/spdwaku1"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/spdwaku2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

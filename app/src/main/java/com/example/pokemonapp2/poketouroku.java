@@ -69,18 +69,6 @@ public class poketouroku extends AppCompatActivity {
         //ViewPagerの取得
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        //TabLayoutを取得してそれをViewPagerにセット
-        TabLayout tabLayout = (TabLayout)findViewById(R.id.tab_layout);
-
-        tabLayout.setupWithViewPager(viewPager);
-
-        //Adapterを取得してそれをViewPagerにセット
-
-        tourokuViewPagerAdapter viewPagerAdapter = new tourokuViewPagerAdapter(getSupportFragmentManager(),syuzokuli,wazali,wazali3,memoli);
-        viewPager.setAdapter(viewPagerAdapter);
-        tabLayout.getTabAt(0).setCustomView(R.layout.tourokutabat0);
-        tabLayout.getTabAt(1).setCustomView(R.layout.tourokutabat1);
-        tabLayout.getTabAt(2).setCustomView(R.layout.tourokutabat2);
 
 
 
@@ -130,6 +118,20 @@ public class poketouroku extends AppCompatActivity {
         //レベル
         level();
 
+        //TabLayoutを取得してそれをViewPagerにセット
+        TabLayout tabLayout = (TabLayout)findViewById(R.id.tab_layout);
+
+        tabLayout.setupWithViewPager(viewPager);
+
+        //Adapterを取得してそれをViewPagerにセット
+
+        tourokuViewPagerAdapter viewPagerAdapter = new tourokuViewPagerAdapter(getSupportFragmentManager(),syuzokuli,wazali,wazali3,memoli);
+        viewPager.setAdapter(viewPagerAdapter);
+        tabLayout.getTabAt(0).setCustomView(R.layout.tourokutabat0);
+        tabLayout.getTabAt(1).setCustomView(R.layout.tourokutabat1);
+        tabLayout.getTabAt(2).setCustomView(R.layout.tourokutabat2);
+
+
         //DB作成
         helper = new MyOpenHelper(getApplicationContext());
         if (key.length() != 0) {
@@ -147,17 +149,13 @@ public class poketouroku extends AppCompatActivity {
         wazali3.add(ibent);
         memoli.add(ibent);
 
+
+
+
+
     }
 
-    //あとで消す
-    public void test2(View view) {
-        Spinner test = findViewById(R.id.hpspinner1);
-        int idg = test.getSelectedItemPosition();
-        Integer i = Integer.valueOf(idg);
-        String tete = i.toString();
-
-        Toast.makeText(poketouroku.this, tete, Toast.LENGTH_SHORT).show();
-    }
+   
 
     //レベルスピナー設定
     public void level(){
@@ -857,9 +855,9 @@ public class poketouroku extends AppCompatActivity {
 
 
 
-    public void test(View view) {
+    public void test() {
         //メモ
-        TextView test = findViewById(R.id.wazawaku1);
-        Toast.makeText(getApplicationContext(), test.getText() + "しました", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(getApplicationContext(),   "しました", Toast.LENGTH_SHORT).show();
     }
 }

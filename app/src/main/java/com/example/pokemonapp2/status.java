@@ -5,9 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -17,8 +20,38 @@ public class status extends androidx.fragment.app.Fragment {
     ArrayList<String> syuzokuti = new ArrayList<String>();
     ArrayList<String> kotaiti = new ArrayList<String>();
     ArrayList<String> doryokuti = new ArrayList<String>();
+    TextView hp;
+    TextView at;
+    TextView df;
+    TextView spat;
+    TextView spdf;
+    TextView spd;
+    Spinner hpkotaiti;
+    Spinner atkotaiti;
+    Spinner dfkotaiti;
+    Spinner spatkotaiti;
+    Spinner spdfkotaiti;
+    Spinner spdkotaiti;
+    Spinner hpdoryokuti;
+    Spinner atdoryokuti;
+    Spinner dfdoryokuti;
+    Spinner spatdoryokuti;
+    Spinner spdfdoryokuti;
+    Spinner spddoryokuti;
+    Spinner seik;
     Context d;
     View customAlertView;
+    double seat=1;
+    double sedf=1;
+    double sespat=1;
+    double sespdf=1;
+    double sespdd=1;
+    double syu;
+    double kotai;
+    double doryoku;
+    double level;
+    double seikakuti;
+    double nouryoku;
     public status(ArrayList<String> syuzokuli){
         syuzokuti=syuzokuli;
     }
@@ -34,24 +67,27 @@ public class status extends androidx.fragment.app.Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
-        super.onViewCreated(view,savedInstanceState);
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
         int key = Integer.parseInt(syuzokuti.get(6));
 
         //種族値
-        TextView hp = view.findViewById(R.id.hpspinner0);
+        hp = view.findViewById(R.id.hpspinner0);
         hp.setText(syuzokuti.get(0));
-        TextView at = view.findViewById(R.id.atspinner0);
+        at = view.findViewById(R.id.atspinner0);
         at.setText(syuzokuti.get(1));
-        TextView df = view.findViewById(R.id.dfspinner0);
+        df = view.findViewById(R.id.dfspinner0);
         df.setText(syuzokuti.get(2));
-        TextView spat = view.findViewById(R.id.spatspinner0);
+        spat = view.findViewById(R.id.spatspinner0);
         spat.setText(syuzokuti.get(3));
-        TextView spdf = view.findViewById(R.id.spdfspinner0);
+        spdf = view.findViewById(R.id.spdfspinner0);
         spdf.setText(syuzokuti.get(4));
-        TextView spd = view.findViewById(R.id.spdspinner0);
+        spd = view.findViewById(R.id.spdspinner0);
         spd.setText(syuzokuti.get(5));
+
+        //性格値取得
+        seik = view.findViewById(R.id.seikaku);
 
         int i;
         //個体値
@@ -60,17 +96,17 @@ public class status extends androidx.fragment.app.Fragment {
         }
 
         ArrayAdapter<String> kotaitiad = new ArrayAdapter<String>(d, android.R.layout.simple_spinner_item, kotaiti);
-        Spinner hpkotaiti = view.findViewById(R.id.hpspinner1);
+        hpkotaiti = view.findViewById(R.id.hpspinner1);
         hpkotaiti.setAdapter(kotaitiad);
-        Spinner atkotaiti = view.findViewById(R.id.atspinner1);
+        atkotaiti = view.findViewById(R.id.atspinner1);
         atkotaiti.setAdapter(kotaitiad);
-        Spinner dfkotaiti = view.findViewById(R.id.dfspinner1);
+        dfkotaiti = view.findViewById(R.id.dfspinner1);
         dfkotaiti.setAdapter(kotaitiad);
-        Spinner spatkotaiti = view.findViewById(R.id.spatspinner1);
+        spatkotaiti = view.findViewById(R.id.spatspinner1);
         spatkotaiti.setAdapter(kotaitiad);
-        Spinner spdfkotaiti = view.findViewById(R.id.spdfspinner1);
+        spdfkotaiti = view.findViewById(R.id.spdfspinner1);
         spdfkotaiti.setAdapter(kotaitiad);
-        Spinner spdkotaiti = view.findViewById(R.id.spdspinner1);
+        spdkotaiti = view.findViewById(R.id.spdspinner1);
         spdkotaiti.setAdapter(kotaitiad);
 
 
@@ -79,12 +115,12 @@ public class status extends androidx.fragment.app.Fragment {
             doryokuti.add(String.valueOf(i));
         }
         ArrayAdapter<String> doryokutiad = new ArrayAdapter<String>(d, R.layout.spinner_item, doryokuti);
-        Spinner hpdoryokuti = view.findViewById(R.id.hpspinner2);
-        Spinner atdoryokuti = view.findViewById(R.id.atspinner2);
-        Spinner dfdoryokuti = view.findViewById(R.id.dfspinner2);
-        Spinner spatdoryokuti = view.findViewById(R.id.spatspinner2);
-        Spinner spdfdoryokuti = view.findViewById(R.id.spdfspinner2);
-        Spinner spddoryokuti = view.findViewById(R.id.spdspinner2);
+        hpdoryokuti = view.findViewById(R.id.hpspinner2);
+        atdoryokuti = view.findViewById(R.id.atspinner2);
+        dfdoryokuti = view.findViewById(R.id.dfspinner2);
+        spatdoryokuti = view.findViewById(R.id.spatspinner2);
+        spdfdoryokuti = view.findViewById(R.id.spdfspinner2);
+        spddoryokuti = view.findViewById(R.id.spdspinner2);
 
         hpdoryokuti.setAdapter(doryokutiad);
 
@@ -98,7 +134,7 @@ public class status extends androidx.fragment.app.Fragment {
 
         spddoryokuti.setAdapter(doryokutiad);
         //新規作成
-        if(key==0) {
+        if (key == 0) {
             //個体値設定
 
             hpkotaiti.setSelection(31);
@@ -120,8 +156,7 @@ public class status extends androidx.fragment.app.Fragment {
             spatdoryokuti.setAdapter(doryokutiad);
             spdfdoryokuti.setAdapter(doryokutiad);
             spddoryokuti.setAdapter(doryokutiad);
-        }
-        else {
+        } else {
 
             hpkotaiti.setSelection(Integer.parseInt(syuzokuti.get(7)));
             atkotaiti.setSelection(Integer.parseInt(syuzokuti.get(8)));
@@ -138,13 +173,6 @@ public class status extends androidx.fragment.app.Fragment {
 
 
         }
-    }
-
-    void stats(){
-
 
     }
-
-
-
 }

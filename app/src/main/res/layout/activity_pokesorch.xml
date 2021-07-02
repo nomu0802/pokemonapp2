@@ -34,7 +34,7 @@
 
     <EditText
         android:id="@+id/sorchnameedit"
-        android:layout_width="358dp"
+        android:layout_width="0dp"
         android:layout_height="54dp"
         android:backgroundTint="@color/black"
         android:ems="10"

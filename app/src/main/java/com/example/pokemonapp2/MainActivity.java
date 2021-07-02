@@ -6,6 +6,7 @@ import androidx.fragment.app.DialogFragment;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -32,8 +33,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ptboutton(View view) {
+
+        MyOpenHelper myhelper = new MyOpenHelper(MainActivity.this);
+        SQLiteDatabase db = myhelper.getReadableDatabase();
+        //カラムの数を数える
+        int numRows = (int) DatabaseUtils.longForQuery(db, "SELECT COUNT(*) FROM pokemondb", null);
+
+        if(numRows==0){ Toast.makeText(getApplicationContext(), "登録してください", Toast.LENGTH_SHORT).show();}
+
+        else {
+
+
+        ptOpenHelper helper = new ptOpenHelper(MainActivity.this);
+        SQLiteDatabase db2 = helper.getReadableDatabase();
+        //カラムの数を数える
+        int numRows2 = (int) DatabaseUtils.longForQuery(db2, "SELECT COUNT(*) FROM pokemonptdb", null);
+
+        if(numRows2==0){
+
+            ptadd();
+            Intent intent4 = new Intent(getApplication(), ptselect.class);
+            startActivity(intent4);
+        }
+        else{
+
         Intent intent4 = new Intent(getApplication(), ptselect.class);
-        startActivity(intent4);
+        startActivity(intent4);}
+        }
     }
 
     public void dbs(View view) {
@@ -55,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void pttest(View view) {
+    public void ptadd() {
        ptOpenHelper helper;
         helper = new ptOpenHelper(getApplicationContext());
         SQLiteDatabase db = helper.getWritableDatabase();
@@ -73,6 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
         db.insert("pokemonptdb", null, cv);
 
-        Toast.makeText(getApplicationContext(), "登録しました", Toast.LENGTH_SHORT).show();
+
     }
 }
