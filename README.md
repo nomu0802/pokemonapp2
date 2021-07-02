@@ -29,6 +29,11 @@
 ⑤道具をダイアログ方式で選択できます  
 ![image](https://user-images.githubusercontent.com/83626132/124227154-2aaae000-db45-11eb-8614-b12b4b718c0e.png)  
 ⑥ステータス、技、メモをタブで切り替えることができます。  
+技選択画面  
+![image](https://user-images.githubusercontent.com/83626132/124227640-fc79d000-db45-11eb-8bf6-f0014a52576a.png)  
+メモ入力画面  
+![image](https://user-images.githubusercontent.com/83626132/124227754-203d1600-db46-11eb-9bf4-fa144bc4be6f.png)  
+
 ⑦努力値の値を0-255でプルダウン方式で選択できます。  
 ⑧個体値の値を0-31でプルダウン方式で選択できます  
 ⑨登録ボタンをタップすることでデータベースに登録します。データベースはsqliteを使用しています  
