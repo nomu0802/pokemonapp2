@@ -7,6 +7,12 @@
   
 画面説明
 1.メインメニュー  
-![image](https://user-images.githubusercontent.com/83626132/124224974-9ee38480-db41-11eb-98a6-fab32097740d.png)
+![image](https://user-images.githubusercontent.com/83626132/124224974-9ee38480-db41-11eb-98a6-fab32097740d.png)  
+  
+①ポケモンの登録を行います
+②登録したポケモンの確認ができます
+③登録したポケモンをもとにptを作成することができます。(登録したポケモンがいない場合画面遷移はできません)
+
+
 
 
