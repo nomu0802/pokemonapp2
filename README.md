@@ -20,6 +20,13 @@
 ①名前を入力することで絞り込むことができます。  
 ②タップすることで登録画面に遷移します。  
 #### 2-2.ポケモンの設定をし登録ボタンをタップすることで登録します。  
+![image](https://user-images.githubusercontent.com/83626132/124226880-bd974a80-db44-11eb-9ffe-44ece7caf52c.png)  
+  
+①ニックネームをつけることができます
+②レベルをプルダウン方式で選択できます
+⑤道具をダイアログ方式で設定できます  
+![Screenshot_20210702_140025_com example pokemonapp2](https://user-images.githubusercontent.com/83626132/124227039-fafbd800-db44-11eb-8857-72f89db8b7fb.jpg)  
+
 
 
 
