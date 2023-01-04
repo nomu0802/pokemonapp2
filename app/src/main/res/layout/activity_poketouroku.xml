@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/poketourokuback"
+    tools:context=".poketouroku">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/touroku1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pokeimg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pokeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/tourokuicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/levelwaku"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/tourokusikakumini" />
+
+    <Spinner
+        android:id="@+id/levelsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf="@+id/leveltext"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/leveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="Lv."
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/levelsp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/levelwaku"
+        app:layout_constraintStart_toStartOf="@+id/levelwaku"
+        app:layout_constraintTop_toTopOf="@+id/levelwaku" />
+
+    <ImageView
+        android:id="@+id/sprites"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No."
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/sprites"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        android:text="15"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/no"
+        app:layout_constraintStart_toEndOf="@+id/no"
+        app:layout_constraintTop_toTopOf="@+id/no"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="94dp"
+        android:layout_height="0dp"
+        android:text="キモリ"
+
+        android:textColor="#FFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/no1"
+        app:layout_constraintTop_toTopOf="@+id/no1" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="ニックネーム"
+        android:inputType="textPersonName"
+
+        android:textColor="#FFFF"
+        android:textColorHint="#94FDFDFD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/sprites"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/seikaku"
+        android:textColor="#FFFF"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelwaku" />
+
+    <TextView
+        android:id="@+id/seikakuwaku1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="性格:"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/seikaku"
+        app:layout_constraintTop_toTopOf="@+id/seikaku" />
+
+    <Spinner
+        android:id="@+id/tokusei"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="@+id/seikaku"
+        app:layout_constraintStart_toStartOf="@+id/seikaku"
+        app:layout_constraintTop_toBottomOf="@+id/seikaku" />
+
+    <TextView
+        android:id="@+id/tokuseiwaku1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="特性:"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tokusei"
+        app:layout_constraintTop_toTopOf="@+id/tokusei" />
+
+    <TextView
+        android:id="@+id/dougumei"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:onClick="item"
+        android:gravity="left|center"
+        android:textColor="#FFFF"
+        android:background="@drawable/tourokusikaku"
+        app:layout_constraintEnd_toEndOf="@+id/tokusei"
+        app:layout_constraintTop_toBottomOf="@+id/tokusei"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/douguwaku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="道具:"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/dougumei"
+        app:layout_constraintTop_toTopOf="@+id/dougumei" />
+
+    <TextView
+        android:id="@+id/typevi"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/type1"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/pokeimg"
+        app:layout_constraintTop_toBottomOf="@+id/pokeimg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/typevi"
+        app:layout_constraintEnd_toEndOf="@+id/typevi"
+        app:layout_constraintStart_toStartOf="@+id/typevi"
+        app:layout_constraintTop_toTopOf="@+id/typevi" />
+
+
+    <TextView
+        android:id="@+id/typevi2"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+
+        android:background="@drawable/type2"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/typevi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/typevi"
+        app:layout_constraintTop_toTopOf="@+id/type1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/typevi2"
+        app:layout_constraintEnd_toEndOf="@+id/typevi2"
+        app:layout_constraintStart_toStartOf="@+id/typevi2"
+        app:layout_constraintTop_toTopOf="@+id/typevi2" />
+
+    <Spinner
+        android:id="@+id/forumspin"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tourokusikakumini"
+        app:layout_constraintEnd_toStartOf="@+id/douguwaku"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/douguwaku" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tourokusikaku2"
+        android:gravity="center"
+        android:text="フォルム:"
+        android:textColor="#FFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/forumspin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/forumspin" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/tourokuback5"
+        app:layout_constraintBottom_toTopOf="@+id/tourokubutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumspin">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/tourokutabback" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <Button
+        android:id="@+id/tourokubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#AE0B0B"
+        android:onClick="saveData"
+        android:text="登録"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

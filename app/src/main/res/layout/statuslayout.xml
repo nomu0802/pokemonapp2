@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/stwaku"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/selectwaku"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/statutswaku1"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/stwaku"
+        app:layout_constraintTop_toTopOf="@+id/stwaku" />
+
+    <TextView
+        android:id="@+id/statutswaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/statutswaku1"
+        app:layout_constraintEnd_toEndOf="@+id/stwaku"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/statutswaku1"
+        app:layout_constraintTop_toTopOf="@+id/statutswaku1"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/hpwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/statutswaku1"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hpwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/hpwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/hpwaku1"
+        app:layout_constraintTop_toTopOf="@+id/hpwaku1"
+        app:layout_constraintVertical_bias="0.512"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/hptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="HP:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/hpwaku1"
+        app:layout_constraintTop_toTopOf="@+id/hpwaku1" />
+
+    <ImageView
+        android:id="@+id/atwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/hpwaku1"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/atwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/atwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintStart_toEndOf="@+id/atwaku1"
+        app:layout_constraintTop_toTopOf="@+id/atwaku1" />
+
+    <TextView
+        android:id="@+id/attitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="こうげき:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/atwaku1"
+        app:layout_constraintTop_toTopOf="@+id/atwaku1" />
+
+    <ImageView
+        android:id="@+id/dfwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/atwaku1" />
+
+    <ImageView
+        android:id="@+id/dfwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/dfwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintStart_toEndOf="@+id/dfwaku1"
+        app:layout_constraintTop_toTopOf="@+id/dfwaku1" />
+
+    <TextView
+        android:id="@+id/dftitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ぼうぎょ:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/dfwaku1"
+        app:layout_constraintTop_toTopOf="@+id/dfwaku1" />
+
+    <ImageView
+        android:id="@+id/spatwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/dfwaku1"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/spatwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/spatwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintStart_toEndOf="@+id/spatwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spatwaku1" />
+
+    <TextView
+        android:id="@+id/spattitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="とくこう:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spatwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spatwaku1" />
+
+    <ImageView
+        android:id="@+id/spdfwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/spatwaku1" />
+
+    <ImageView
+        android:id="@+id/spdfwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/spdfwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spdfwaku1" />
+
+    <TextView
+        android:id="@+id/spdftitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="とくぼう:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spdfwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spdfwaku1" />
+
+    <ImageView
+        android:id="@+id/spdwaku1"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tourokusikaku2"
+        app:layout_constraintStart_toStartOf="@+id/statutswaku1"
+        app:layout_constraintTop_toBottomOf="@+id/spdfwaku1" />
+
+    <ImageView
+        android:id="@+id/spdwaku2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/tourokusikaku1"
+        app:layout_constraintBottom_toBottomOf="@+id/spdwaku1"
+        app:layout_constraintEnd_toEndOf="@+id/statutswaku2"
+        app:layout_constraintStart_toEndOf="@+id/spdwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spdwaku1" />
+
+    <TextView
+        android:id="@+id/spdtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="すばやさ:"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spdwaku1"
+        app:layout_constraintTop_toTopOf="@+id/spdwaku1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="種族値"
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/statutswaku1"
+        app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="個体値"
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="努力値"
+        android:textColor="#FFFF"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/statutswaku2" />
+
+    <TextView
+        android:id="@+id/hpspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/hpwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/hpwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/hpwaku2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+
+    <Spinner
+        android:id="@+id/hpspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/hpwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/hpwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/hpwaku2" />
+
+    <Spinner
+        android:id="@+id/hpspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+
+        app:layout_constraintBottom_toBottomOf="@+id/hpwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/hpwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/hpwaku2" />
+
+
+
+    <TextView
+        android:id="@+id/atspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/atwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/atwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/atwaku2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+
+    <Spinner
+        android:id="@+id/atspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/atwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/atwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/atwaku2" />
+
+    <Spinner
+        android:id="@+id/atspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/atwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/atwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/atwaku2" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/dfspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/dfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/dfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/dfwaku2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+    <Spinner
+        android:id="@+id/dfspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/dfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/dfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/dfwaku2" />
+
+    <Spinner
+        android:id="@+id/dfspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/dfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/dfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/dfwaku2" />
+
+
+
+    <TextView
+        android:id="@+id/spatspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/spatwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/spatwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/spatwaku2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+    <Spinner
+        android:id="@+id/spatspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spatwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/spatwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/spatwaku2" />
+
+    <Spinner
+        android:id="@+id/spatspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spatwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/spatwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/spatwaku2" />
+
+
+    <TextView
+        android:id="@+id/spdfspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/spdfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/spdfwaku2"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+
+    <Spinner
+        android:id="@+id/spdfspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spdfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/spdfwaku2" />
+
+    <Spinner
+        android:id="@+id/spdfspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spdfwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/spdfwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/spdfwaku2" />
+
+    <TextView
+        android:id="@+id/spdspinner0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/spinerback"
+        app:layout_constraintBottom_toBottomOf="@+id/spdwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/spdwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/spdwaku2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+    <Spinner
+        android:id="@+id/spdspinner1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spdwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/spdwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/spdwaku2" />
+
+    <Spinner
+        android:id="@+id/spdspinner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tourokustatuswaku"
+        app:layout_constraintBottom_toBottomOf="@+id/spdwaku2"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/spdwaku1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/spdwaku2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
